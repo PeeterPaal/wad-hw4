@@ -2,9 +2,7 @@ import Footer from "../../src/components/Footer";
 import {mount} from "@vue/test-utils";
 
 describe('Footer', () => {
-    const wrapper = mount(Footer, {
-        attachToDocument: true
-    });
+    const wrapper = mount(Footer);
     const addItemButton = wrapper.find('span');
 
     it("Button is diplayed on load", () => {
